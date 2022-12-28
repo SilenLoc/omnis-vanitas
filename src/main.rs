@@ -10,7 +10,7 @@ fn main() {
 
     let native_options = eframe::NativeOptions::default();
     eframe::run_native(
-        "omni-vanitas",
+        "omni vanitas",
         native_options,
         Box::new(|cc| Box::new(omnis_vanitas::TemplateApp::new(cc))),
     );
