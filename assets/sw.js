@@ -1,4 +1,4 @@
-var cacheName = 'egui-vanity-pwa';
+var cacheName = 'omni-vanity-pwa';
 var filesToCache = [
   './',
   './index.html',

@@ -1,6 +1,6 @@
 {
-  "name": "egui Template PWA",
-  "short_name": "egui-template-pwa",
+  "name": "omni-vanity PWA",
+  "short_name": "omni-vanity-pwa",
   "icons": [
     {
       "src": "./icon-256.png",
