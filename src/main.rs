@@ -3,7 +3,6 @@
 use omnis_vanitas::TemplateApp;
 
 #[cfg(target_arch = "wasm32")]
-#[wasm_bindgen]
 fn main() {
     // Make sure panics are logged using `console.error`.
     console_error_panic_hook::set_once();
@@ -11,7 +10,7 @@ fn main() {
     // Redirect tracing to console.log and friends:
     tracing_wasm::set_as_global_default();
 
-    let web_options = eframe::WebOptions::default()
+    let web_options = eframe::WebOptions::default();
 
 
     wasm_bindgen_futures::spawn_local(async {
