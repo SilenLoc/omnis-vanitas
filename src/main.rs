@@ -10,7 +10,7 @@ fn main() {
 
     let native_options = eframe::NativeOptions::default();
     eframe::run_native(
-        "eframe template",
+        "omni-vanitas",
         native_options,
         Box::new(|cc| Box::new(eframe_template::TemplateApp::new(cc))),
     );
@@ -30,7 +30,7 @@ fn main() {
 
     wasm_bindgen_futures::spawn_local(async {
         eframe::start_web(
-            "the_canvas_id", // hardcode it
+            "omni_vanitas_canvas", // hardcode it
             web_options,
             Box::new(|cc| Box::new(TemplateApp::new(cc))),
         )
