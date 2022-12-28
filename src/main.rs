@@ -12,7 +12,7 @@ fn main() {
     eframe::run_native(
         "omni-vanitas",
         native_options,
-        Box::new(|cc| Box::new(TemplateApp::new(cc))),
+        Box::new(|cc| Box::new(omnis_vanitas::TemplateApp::new(cc))),
     );
 }
 
