@@ -16,6 +16,7 @@ fn main() {
     );
 }
 
+// when compiling to web using trunk.
 #[cfg(target_arch = "wasm32")]
 fn main() {
     // Make sure panics are logged using `console.error`.
