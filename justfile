@@ -42,3 +42,7 @@ fmt:
 release *args:
 	npm install --no-save conventional-changelog-conventionalcommits @semantic-release/exec
 	npx semantic-release {{args}}  
+
+
+web:
+	trunk serve	
