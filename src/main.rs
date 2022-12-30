@@ -37,7 +37,6 @@ fn main() {
 // when compiling to web using trunk.
 #[cfg(target_arch = "wasm32")]
 fn main() {
-
     let rt = Runtime::new().expect("Unable to create Runtime");
 
     // Enter the runtime so that `tokio::spawn` is available immediately.
