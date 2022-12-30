@@ -1,3 +1,5 @@
+pub(crate) mod native{
+
 use std::sync::mpsc::{Receiver, Sender};
 use translation_server_client_silen::ready;
 
@@ -92,4 +94,5 @@ fn send_req(tx: Sender<String>, ctx: egui::Context) {
 
         ctx.request_repaint();
     });
+}
 }
