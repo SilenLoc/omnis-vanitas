@@ -42,3 +42,8 @@ fmt:
 release *args:
 	npm install --no-save conventional-changelog-conventionalcommits @semantic-release/exec
 	npx semantic-release {{args}}  
+
+check-all:
+	cargo fmt --all --check
+	cargo clippy -- -D warnings
+	cargo check --all-features --lib

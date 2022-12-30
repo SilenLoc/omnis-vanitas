@@ -31,8 +31,7 @@
         {
           "assets": [
             {
-              "path": "target/release/elbtrans-server"
-            }
+              "path": "target/release/omni-vanitas-web"
           ],
           "successComment": ":tada: new version is [${nextRelease.version}](<github_release_url>) :tada:"
         }

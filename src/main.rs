@@ -3,7 +3,6 @@
 
 use tokio::runtime::Runtime;
 use std::time::Duration;
-use omnis_vanitas::TemplateApp;
 
 
 fn main() {
