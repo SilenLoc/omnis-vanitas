@@ -26,6 +26,6 @@ fn main() {
     eframe::run_native(
         "omni vanitas",
         native_options,
-        Box::new(|_| Box::new(omnis_vanitas::TemplateApp::new())),
+        Box::new(|_| Box::new(omnis_vanitas::App::new())),
     );
 }
