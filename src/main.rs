@@ -1,9 +1,7 @@
 #![warn(clippy::all, rust_2018_idioms)]
 
-
-use tokio::runtime::Runtime;
 use std::time::Duration;
-
+use tokio::runtime::Runtime;
 
 fn main() {
     let rt = Runtime::new().expect("Unable to create Runtime");
@@ -31,4 +29,3 @@ fn main() {
         Box::new(|_| Box::new(omnis_vanitas::TemplateApp::new())),
     );
 }
-
