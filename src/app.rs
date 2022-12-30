@@ -56,7 +56,7 @@ pub(crate) mod native {
                 tx: _,
                 rx: _,
                 tx_trans,
-                rx_trans,
+                rx_trans: _,
                 translate,
                 from,
                 to,
