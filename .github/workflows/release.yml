@@ -15,7 +15,7 @@ jobs:
         with:
           components: clippy, rustfmt
       - uses: Swatinem/rust-cache@v2
-      - uses: extractions/setup-just@v1
+      - uses: extractions/setup-just@v2
         env:
           GITHUB_TOKEN: ${{ github.token }}
       - run: just verify
@@ -31,7 +31,7 @@ jobs:
           components: clippy, rustfmt
       - uses: taiki-e/install-action@cargo-binstall
       - run: cargo binstall --no-confirm --force cargo-edit
-      - uses: extractions/setup-just@v1
+      - uses: extractions/setup-just@v2
         env:
           GITHUB_TOKEN: ${{ github.token }}
       - run: just release
